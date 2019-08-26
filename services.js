@@ -108,13 +108,13 @@ seeMenuBtn  .addEventListener("click", function() {
 
 seeMenuBtn.addEventListener("click", function() {
   if (measureResult == "Underweight") {
-    window.open("underweight.html", "_blank");
+    window.open("https://hiendk.github.io/underweight.html", "_blank");
   } else if (measureResult == "Normal") {
-    window.open("normal.html", "_blank");
+    window.open("https://hiendk.github.io/normal.html", "_blank");
   } else if (measureResult == "Overweight") {
-    window.open("overweight.html", "_blank");
+    window.open("https://hiendk.github.io/overweight.html", "_blank");
   } else if (measureResult == "Obese") {
-    window.open("obese.html", "_blank");
+    window.open("https://hiendk.github.io/obese.html", "_blank");
   }
 });
 
