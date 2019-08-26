@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://previews.123rf.com/images/romastudio/romastudio1603/romastudio160300025/52848945-healthy-eating-background-studio-photography-of-different-fruits-and-vegetables-on-wooden-table.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+#logo {
+    text-decoration: none;
+    float: left;
+    width: 200px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    padding: 20px 0px 7px 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#logoimg {
+    display: block;
+    background-image: url(logoimg.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 125px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-left: 700px;
+    margin-right: 70px;
+    margin-top: 15px;
+}
+
+.navbar ul {
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    
+    text-decoration: none;
+    color: white;
+    /* background-color: orangered; */
+    /* border: 1px solid white; */
+    display: flex;
+    padding: 5px 20px;
+    transition: 0.3s ease;
+    
+}
+
+.navbar ul li a:hover{
+    color: #1b8533;
+}
+
+.navbar ul li.active a {
+    background-color: #1b8533;
+    color: white;
+    /* box-shadow: 0px 0px 1px #000000; */
+}
+
+
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.quote {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    color: #ffffff;
+    font-size: 30px;
+    width: 1380px;
+    height: 500px;
+    margin: 30px 0 0 100px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+.chinese {
+    font-family: 'Times New Roman', Times, serif;
+
+    float: right;
+    position: absolute;
+    bottom: 200px;
+    right: 300px;
+}
+
+.quotes {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 250px;
+    left: 350px;
+}
+
+.desc {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    position: absolute;
+    text-align: initial;
+    top: 160px;
+    left: 150px;
+    right: 100px;
+}
+
