@@ -108,13 +108,13 @@ seeMenuBtn  .addEventListener("click", function() {
 
 seeMenuBtn.addEventListener("click", function() {
   if (measureResult == "Underweight") {
-    window.open("E:\\Documents\\GitHub\\foodforfit\\Underweight\\underweight.html", "_blank");
+    window.open("underweight.html", "_blank");
   } else if (measureResult == "Normal") {
-    window.open("E:\\Documents\\GitHub\\foodforfit\\Normal\\normal.html", "_blank");
+    window.open("normal.html", "_blank");
   } else if (measureResult == "Overweight") {
-    window.open("E:\\Documents\\GitHub\\foodforfit\\Overweight\\overweight.html", "_blank");
+    window.open("overweight.html", "_blank");
   } else if (measureResult == "Obese") {
-    window.open("E:\\Documents\\GitHub\\foodforfit\\Obese\\obese.html", "_blank");
+    window.open("obese.html", "_blank");
   }
 });
 
