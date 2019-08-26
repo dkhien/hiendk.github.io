@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://previews.123rf.com/images/romastudio/romastudio1603/romastudio160300025/52848945-healthy-eating-background-studio-photography-of-different-fruits-and-vegetables-on-wooden-table.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+#logo {
+    text-decoration: none;
+    float: left;
+    width: 200px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    padding: 20px 0px 7px 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#logoimg {
+    display: block;
+    background-image: url(logoimg.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 125px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-left: 700px;
+    margin-right: 70px;
+    margin-top: 15px;
+}
+
+.navbar ul {
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    
+    text-decoration: none;
+    color: white;
+    /* background-color: orangered; */
+    /* border: 1px solid white; */
+    display: flex;
+    padding: 5px 20px;
+    transition: 0.3s ease;
+    
+}
+
+.navbar ul li a:hover{
+    color: #1b8533;
+}
+
+.navbar ul li.active a {
+    background-color: #1b8533;
+    color: white;
+    /* box-shadow: 0px 0px 1px #000000; */
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  .carousel {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    margin: 50px auto;
+    margin-left: 600px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  .carousel:hover .slide:after,
+  .carousel:hover .counter,
+  .carousel:hover .slide:before {
+    opacity: 1;
+  }
+  .slide {
+    font-family: 'Times New Roman', Times, serif;
+    float: right;
+    position: absolute;
+    z-index: 1;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    text-align: left;
+    transition: opacity 0.4s;
+    opacity: 1;
+  }
+  .slide:before {
+    content: attr(annot);
+    display: block;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    color: rgba(255,255,255,1);
+    font-size: 70px;
+    font-weight: 300;
+    z-index: 12;
+    opacity: 0;
+    text-align: right;
+    transition: opacity 0.3s;
+    text-shadow: 0 0 2px #000;
+  }
+  .slide:after {
+    content: attr(slide);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+    height: 500px;
+    opacity: 0;
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.7));
+    text-align: right;
+    text-indent: 549px;
+    line-height: 101px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 0 1px #000;
+  }
+  .counter {
+    position: absolute;
+    bottom: 20px;
+    right: 1px;
+    height: 20px;
+    width: 60px;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    line-height: 21px;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .faux-ui-facia {
+    top: 0;
+    right: 0;
+    float: right;
+    position: absolute;
+    margin-top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .faux-ui-facia:checked {
+    z-index: 8;
+  }
+  .faux-ui-facia:checked + .slide {
+    opacity: 0;
+  }
+  .faux-ui-facia:checked:nth-child(1):checked {
+    z-index: 9;
+  }
+  .faux-ui-facia:nth-child(1):checked {
+    float: left;
+    z-index: 9;
+  }
+  .faux-ui-facia:nth-child(1):checked + .slide {
+    opacity: 1;
+  }
+  .faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia {
+    float: left;
+    z-index: 8;
+  }
+  .faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia + .slide {
+    opacity: 0;
+  }
+  .faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked {
+    z-index: 9;
+  }
+  .faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked + .slide {
+    opacity: 1;
+  }
+  /* --- Intro text --- */
+  .intro {
+    padding: 80px 0 60px 0;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    width: 800px;
+  }
+  .intro .intro__title {
+    font-weight: 200;
+    font-size: 32px;
+    color: #fff;
+  }
+  .intro .intro__body {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    opacity: 0.48;
+    padding: 0 160px;
+    margin: 0;
+  }
+  
+  .slide1 {
+    background-image: url("https://cdn.vox-cdn.com/thumbor/o-t7afI5TqDZlM0ABy3Rl9QpdP0=/0x0:3414x2561/1200x800/filters:focal(0x0:3414x2561)/cdn.vox-cdn.com/uploads/chorus_image/image/51127681/shutterstock_322906217.0.0.jpg");
+    background-size: cover;
+  }
+
+  .slide2 {
+      background-image: url("  https://img-global.cpcdn.com/005_recipes/6cd8ce11989a83b0/751x532cq70/b%E1%BB%AFa-sang-gi%E1%BA%A3m-can-recipe-main-photo.jpg");
+      background-size: cover;
+  }
+
+  .slide3 {
+    background-image: url("https://www.lic-ecogreen.com.vn/public/frontend/uploads/kceditor/images/com-trua.jpg");
+    background-size: cover;
+}
+
+.slide4 {
+    background-image: url("http://farm8.staticflickr.com/7443/11733485345_412b9b8010_o.jpg");
+    background-size: cover;
+}
+.slide5 {
+    background-image: url("https://www.theflavorbender.com/wp-content/uploads/2018/03/Butter-and-Lemon-Slow-Roasted-Salmon-The-Flavor-Bender-Facebook-Share-10.jpg");
+    background-size: cover;
+}
+.slide6 {
+    background-image: url("https://cdn-prod.medicalnewstoday.com/content/images/articles/323/323169/greek-yoghurt-in-bowl.jpg");
+    background-size: cover;
+}
+
+
+
+.slide7 {
+    background-image: url("https://images-prod.healthline.com/hlcmsresource/images/AN_images/best-weight-loss-fruits-1296x728-stone-fruits.jpg");
+    background-size: cover;
+}
+
+.state {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 20px;
+  margin: 50px 0 0 130px;
+  width: 400px;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  font-family: sans-serif;
+  line-height: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+
+}
+
+.currentState{
+  color: red;
+}
+
+.currentState2 {
+  color: #1b8533;
+  margin-left: 10px;
+}
+
+.treatment {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 10px;
+  margin-left: 130px;
+  width: 400px;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  bottom: 75px;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  line-height: 30px;
+
+}
